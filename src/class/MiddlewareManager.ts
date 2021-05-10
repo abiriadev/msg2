@@ -7,7 +7,7 @@ class MiddlewareManager {
         this.middlewareChain = initMiddlewareChain || []
     }
 
-    public addMiddleware(mid: middleware) {
+    public addCommand(mid: middleware) {
         this.middlewareChain.push(mid)
 
         return this

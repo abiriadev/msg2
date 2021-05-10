@@ -22,5 +22,6 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'no-await-in-loop': 'off',
         'no-unused-vars': 1,
+        'lines-between-class-members': 'off'
     },
 }

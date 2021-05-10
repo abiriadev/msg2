@@ -122,4 +122,4 @@ dist/
 # local test environment
 src/local/
 lab/
-tests/
+src/tests/
