@@ -1,1 +1,1 @@
-worker: ts-node -r dotenv/config ./src/local/index.ts
+worker: ./node_modules/.bin/ts-node ./src/local/index.ts
