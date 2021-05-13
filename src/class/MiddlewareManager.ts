@@ -1,19 +1,18 @@
-import { middleware } from '../types'
+import Command from './Command'
 
 class MiddlewareManager {
-    private middlewareChain: Array<middleware>
+    private middlewareChain: Array<Command>
 
-    constructor(initMiddlewareChain?: Array<middleware>) {
-        this.middlewareChain = initMiddlewareChain || []
+    constructor(initMiddlewareChain: Array<Command> = []) {
+        this.middlewareChain = initMiddlewareChain
     }
 
-    public addCommand(mid: middleware) {
+    addCommand(mid: Command) {
         this.middlewareChain.push(mid)
-
         return this
     }
 
-    public array() {
+    array() {
         return [...this.middlewareChain]
     }
 }

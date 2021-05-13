@@ -22,6 +22,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'no-await-in-loop': 'off',
         'no-unused-vars': 1,
-        'lines-between-class-members': 'off'
+        'lines-between-class-members': 'off',
+        'no-shadow': 0,
     },
 }
