@@ -8,7 +8,7 @@
         "test:local": "tsc && node ./dist/local/index.js",
         "lint": "./node_modules/.bin/eslint . --fix",
         "format": "prettier . --write",
-        "heroku": "tsc && node ./dist/local/index.js"
+        "heroku": "./node_modules/.bin/tsc && node ./dist/local/index.js"
     },
     "keywords": [
         "MSG",
