@@ -1,0 +1,1 @@
+worker: node -r dotenv/config ./dist/local/index.js

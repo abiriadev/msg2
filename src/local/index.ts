@@ -194,4 +194,10 @@ bot.middlewareManager.addCommand(
     ),
 )
 
-bot.login('ODM5ODc1NTAxNjM2MzIxMjgw.YJQBAw.3o8xUS2zk0b9ihNQVHQfqRUS4wI')
+if (!process.env.TOKEN) {
+    console.log('token is undefined')
+
+    process.exit(3)
+}
+
+bot.login(process.env.TOKEN)
